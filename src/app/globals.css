@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+
+  /* Editorial palette: parchment cream + deep emerald + brass gold */
+  --color-cream-50: #faf7f0;
+  --color-cream-100: #f3edd9;
+  --color-cream-200: #e8e0c7;
+  --color-cream-300: #d8ccab;
+
+  --color-ink-700: #1f3b2c;
+  --color-ink-800: #14291e;
+  --color-ink-900: #0c1f17;
+  --color-ink-950: #06120d;
+
+  --color-gold-300: #e5cf91;
+  --color-gold-400: #d4b46c;
+  --color-gold-500: #b8954a;
+  --color-gold-600: #9a7b3a;
+  --color-gold-700: #786029;
+
+  --color-taupe-500: #6b5e4b;
+  --color-taupe-600: #4f4534;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--color-cream-50);
+  color: var(--color-ink-900);
+}
+
+.font-serif {
+  font-family: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  letter-spacing: -0.015em;
+}
+
+::selection {
+  background: var(--color-gold-400);
+  color: var(--color-ink-900);
+}
+
+/* Amazon CTA button — high-conversion Amazon orange */
+.amazon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to bottom, #ffd784 0%, #ffae3a 50%, #ff9500 100%);
+  color: #111 !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  border: 1px solid #c98700;
+  box-shadow: 0 1px 0 #b97800, 0 4px 14px rgba(184, 149, 74, 0.18);
+  transition: filter 0.15s ease, transform 0.15s ease;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.amazon-btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+.amazon-btn::after {
+  content: "→";
+  font-weight: 700;
+}
+
+/* Book cover frame — subtle shelf look */
+.book-cover {
+  background: linear-gradient(135deg, #e8e0c7 0%, #d8ccab 100%);
+  box-shadow:
+    0 1px 1px rgba(12, 31, 23, 0.08),
+    0 6px 16px rgba(12, 31, 23, 0.18),
+    inset -2px 0 4px rgba(12, 31, 23, 0.12);
+}
+
+/* Drop cap for editorial paragraphs */
+.prose-editorial > p:first-of-type::first-letter {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 0.9;
+  float: left;
+  margin: 0.4rem 0.6rem 0 0;
+  color: var(--color-gold-500);
+}
+
+/* Pull-quote */
+.prose blockquote {
+  border-left: 2px solid var(--color-gold-500);
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--color-ink-900);
+  font-weight: 500;
+}
