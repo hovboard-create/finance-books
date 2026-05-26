@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { getAllSegments, getBooksForSegment, getStats } from "@/lib/db";
+import Image from "next/image";
+import { getBooksForSegment, getSegmentsByKind, getStats } from "@/lib/db";
 import { BookCard } from "@/components/BookCard";
 
 export default function HomePage() {
-  const segments = getAllSegments();
+  const collections = getSegmentsByKind("collection");
+  const audienceSegments = getSegmentsByKind("audience");
   const stats = getStats();
 
   return (
@@ -20,7 +22,7 @@ export default function HomePage() {
             We've read every personal-finance book worth reading. Here are the {stats.books} we actually recommend — sorted by where you are right now, not by some generic bestseller list.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
-            {segments.map((s) => (
+            {audienceSegments.map((s) => (
               <Link
                 key={s.slug}
                 href={`/${s.slug}`}
@@ -33,7 +35,59 @@ export default function HomePage() {
         </div>
       </section>
 
-      {segments.map((segment) => {
+      {/* Featured collections — broad entry points (Must-Read, NYT Bestsellers) */}
+      <section className="border-b border-cream-200 bg-cream-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+          <p className="text-xs font-mono uppercase tracking-widest text-gold-600 mb-2 text-center">
+            Start here
+          </p>
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-ink-900 text-center mb-8">
+            Editor's Collections
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {collections.map((c) => {
+              const top = getBooksForSegment(c.slug).slice(0, 5);
+              return (
+                <Link
+                  key={c.slug}
+                  href={`/${c.slug}`}
+                  className="group block p-6 rounded-xl bg-cream-50 border border-cream-200 hover:border-gold-400 transition-colors"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-serif text-2xl font-semibold text-ink-900 group-hover:text-gold-600 transition-colors">
+                      {c.name}
+                    </h3>
+                    <span className="text-sm font-medium text-ink-700 group-hover:text-gold-600 whitespace-nowrap">
+                      View all →
+                    </span>
+                  </div>
+                  <p className="text-taupe-600 text-sm mb-5">{c.audience}</p>
+                  <div className="flex gap-2">
+                    {top.map((b) => (
+                      <div
+                        key={b.slug}
+                        className="book-cover rounded overflow-hidden w-14 h-20 relative flex-shrink-0"
+                      >
+                        {b.cover_url && (
+                          <Image
+                            src={b.cover_url}
+                            alt={b.title}
+                            fill
+                            sizes="3.5rem"
+                            className="object-cover"
+                          />
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {audienceSegments.map((segment) => {
         const books = getBooksForSegment(segment.slug).slice(0, 3);
         return (
           <section key={segment.slug} className="border-b border-cream-200">

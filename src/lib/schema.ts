@@ -1,5 +1,6 @@
 export type Segment = {
   slug: string;
+  kind: "audience" | "collection";
   name: string;
   short_name: string;
   audience: string;

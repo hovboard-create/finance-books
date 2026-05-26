@@ -33,5 +33,25 @@
   { "book_slug": "clockwork", "segment_slug": "for-entrepreneurs", "display_rank": 4 },
   { "book_slug": "simple-numbers-straight-talk", "segment_slug": "for-entrepreneurs", "display_rank": 5 },
   { "book_slug": "small-time-operator", "segment_slug": "for-entrepreneurs", "display_rank": 6 },
-  { "book_slug": "rich-dad-poor-dad", "segment_slug": "for-entrepreneurs", "display_rank": 7 }
+  { "book_slug": "rich-dad-poor-dad", "segment_slug": "for-entrepreneurs", "display_rank": 7 },
+
+  { "book_slug": "psychology-of-money", "segment_slug": "must-read", "display_rank": 1 },
+  { "book_slug": "simple-path-to-wealth", "segment_slug": "must-read", "display_rank": 2 },
+  { "book_slug": "rich-dad-poor-dad", "segment_slug": "must-read", "display_rank": 3 },
+  { "book_slug": "i-will-teach-you-to-be-rich", "segment_slug": "must-read", "display_rank": 4 },
+  { "book_slug": "intelligent-investor", "segment_slug": "must-read", "display_rank": 5 },
+  { "book_slug": "millionaire-next-door", "segment_slug": "must-read", "display_rank": 6 },
+  { "book_slug": "your-money-or-your-life", "segment_slug": "must-read", "display_rank": 7 },
+  { "book_slug": "little-book-of-common-sense-investing", "segment_slug": "must-read", "display_rank": 8 },
+  { "book_slug": "richest-man-in-babylon", "segment_slug": "must-read", "display_rank": 9 },
+  { "book_slug": "total-money-makeover", "segment_slug": "must-read", "display_rank": 10 },
+
+  { "book_slug": "psychology-of-money", "segment_slug": "nyt-bestsellers", "display_rank": 1 },
+  { "book_slug": "rich-dad-poor-dad", "segment_slug": "nyt-bestsellers", "display_rank": 2 },
+  { "book_slug": "total-money-makeover", "segment_slug": "nyt-bestsellers", "display_rank": 3 },
+  { "book_slug": "millionaire-next-door", "segment_slug": "nyt-bestsellers", "display_rank": 4 },
+  { "book_slug": "i-will-teach-you-to-be-rich", "segment_slug": "nyt-bestsellers", "display_rank": 5 },
+  { "book_slug": "financial-feminist", "segment_slug": "nyt-bestsellers", "display_rank": 6 },
+  { "book_slug": "your-money-or-your-life", "segment_slug": "nyt-bestsellers", "display_rank": 7 },
+  { "book_slug": "latte-factor", "segment_slug": "nyt-bestsellers", "display_rank": 8 }
 ]

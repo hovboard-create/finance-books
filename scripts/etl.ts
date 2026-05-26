@@ -4,6 +4,7 @@ import { dirname, resolve } from "node:path";
 
 type Segment = {
   slug: string;
+  kind: string;
   name: string;
   short_name: string;
   audience: string;
@@ -109,6 +110,7 @@ function main() {
 
     CREATE TABLE segments (
       slug TEXT PRIMARY KEY,
+      kind TEXT NOT NULL DEFAULT 'audience',
       name TEXT NOT NULL,
       short_name TEXT NOT NULL,
       audience TEXT NOT NULL,
@@ -154,8 +156,8 @@ function main() {
   `);
 
   const insertSegment = db.prepare(`
-    INSERT INTO segments (slug, name, short_name, audience, hero_headline, hero_subhead, meta_title, meta_description, sort_order)
-    VALUES (@slug, @name, @short_name, @audience, @hero_headline, @hero_subhead, @meta_title, @meta_description, @sort_order)
+    INSERT INTO segments (slug, kind, name, short_name, audience, hero_headline, hero_subhead, meta_title, meta_description, sort_order)
+    VALUES (@slug, @kind, @name, @short_name, @audience, @hero_headline, @hero_subhead, @meta_title, @meta_description, @sort_order)
   `);
 
   const insertBook = db.prepare(`

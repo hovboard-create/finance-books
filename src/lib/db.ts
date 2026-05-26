@@ -17,6 +17,12 @@ export function getAllSegments(): Segment[] {
     .all() as Segment[];
 }
 
+export function getSegmentsByKind(kind: "audience" | "collection"): Segment[] {
+  return db()
+    .prepare("SELECT * FROM segments WHERE kind = ? ORDER BY sort_order ASC")
+    .all(kind) as Segment[];
+}
+
 export function getSegment(slug: string): Segment | null {
   return (
     (db().prepare("SELECT * FROM segments WHERE slug = ?").get(slug) as

@@ -1,6 +1,31 @@
 [
   {
+    "slug": "must-read",
+    "kind": "collection",
+    "name": "Must-Read Finance Books",
+    "short_name": "Must-Read",
+    "audience": "The essential canon — if you read nothing else, read these",
+    "hero_headline": "The Must-Read Finance Books",
+    "hero_subhead": "If you read nothing else this year, read these. The essential canon of personal finance — the handful of books that show up on every serious list, ours included.",
+    "meta_title": "The Must-Read Finance Books (The Essential Canon)",
+    "meta_description": "The essential personal-finance canon — the must-read books that belong on every shelf, from The Psychology of Money to The Intelligent Investor. Editor's picks with honest takeaways.",
+    "sort_order": 1
+  },
+  {
+    "slug": "nyt-bestsellers",
+    "kind": "collection",
+    "name": "New York Times Bestsellers",
+    "short_name": "NYT Bestsellers",
+    "audience": "Personal-finance books that topped the New York Times bestseller list",
+    "hero_headline": "New York Times Bestselling Finance Books",
+    "hero_subhead": "Personal-finance books that earned a spot on the New York Times bestseller list — the titles that shaped how a generation thinks about money.",
+    "meta_title": "Best-Selling Finance Books: New York Times Bestsellers",
+    "meta_description": "Personal-finance books that hit the New York Times bestseller list — Rich Dad Poor Dad, The Psychology of Money, The Total Money Makeover, and more, with honest reviews.",
+    "sort_order": 2
+  },
+  {
     "slug": "for-new-grads",
+    "kind": "audience",
     "name": "For 20-Somethings & New Grads",
     "short_name": "New Grads",
     "audience": "Early-career readers in their 20s building money habits from scratch",
@@ -8,10 +33,11 @@
     "hero_subhead": "Nine modern classics that turn your first paycheck into lasting wealth — no jargon, no shame, no get-rich-quick.",
     "meta_title": "Best Finance Books for Young Adults & New Grads (2026)",
     "meta_description": "The 9 best finance books for 20-somethings and new grads — modern, jargon-free, and built for your first salary. Editorial picks with key takeaways.",
-    "sort_order": 1
+    "sort_order": 3
   },
   {
     "slug": "for-paying-off-debt",
+    "kind": "audience",
     "name": "For Paying Off Debt",
     "short_name": "Debt Payoff",
     "audience": "Readers focused on eliminating credit card debt, student loans, or other consumer debt",
@@ -19,10 +45,11 @@
     "hero_subhead": "Seven step-by-step playbooks for paying off credit cards, student loans, and consumer debt — from the snowball method to behavior change that sticks.",
     "meta_title": "Best Books for Getting Out of Debt (2026 Edition)",
     "meta_description": "The 7 best books for paying off debt — from Dave Ramsey's snowball method to Vicki Robin's life-energy framework. Honest reviews with key lessons.",
-    "sort_order": 2
+    "sort_order": 4
   },
   {
     "slug": "for-beginner-investors",
+    "kind": "audience",
     "name": "For First-Time Investors",
     "short_name": "Beginner Investors",
     "audience": "New investors building their first portfolio, choosing index funds, or learning to value stocks",
@@ -30,10 +57,11 @@
     "hero_subhead": "Nine books that teach you to invest like Vanguard founder Jack Bogle — low-cost, low-stress, and built to compound for 40 years.",
     "meta_title": "Best Investing Books for Beginners (2026 Reading List)",
     "meta_description": "The 9 best investing books for beginners. Start with Bogle and Collins, finish with Graham. Honest takeaways on Rich Dad Poor Dad and the rest.",
-    "sort_order": 3
+    "sort_order": 5
   },
   {
     "slug": "for-entrepreneurs",
+    "kind": "audience",
     "name": "For Small Business Owners & Entrepreneurs",
     "short_name": "Entrepreneurs",
     "audience": "Founders, owner-operators, and small business owners managing cashflow and profitability",
@@ -41,6 +69,6 @@
     "hero_subhead": "Seven books on cashflow, pricing, and profitability — the financial side of running a business that nobody teaches you in entrepreneurship school.",
     "meta_title": "Best Finance Books for Entrepreneurs & Small Business Owners",
     "meta_description": "The 7 best finance books for entrepreneurs — Profit First, E-Myth, $100M Offers, and more. Cashflow, pricing, and small-business profitability essentials.",
-    "sort_order": 4
+    "sort_order": 6
   }
 ]
