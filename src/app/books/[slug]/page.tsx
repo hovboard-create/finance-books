@@ -137,13 +137,13 @@ export default async function BookPage({
                 <p className="text-xs text-taupe-500 mt-2">
                   {book.amazon_updated_at ? (
                     <>
-                      Price &amp; rating from Amazon, updated{" "}
+                      Amazon rating as of{" "}
                       {new Date(book.amazon_updated_at).toLocaleDateString("en-US", {
                         month: "short",
                         day: "numeric",
                         year: "numeric",
                       })}
-                      . Current price &amp; availability shown on Amazon at checkout.
+                      . Live price &amp; current rating shown on Amazon. We earn a small commission if you buy through this link — no cost to you.
                     </>
                   ) : (
                     <>We earn a small commission if you buy through this link — no cost to you.</>
