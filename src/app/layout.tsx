@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -36,6 +37,25 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://covers.openlibrary.org" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://m.media-amazon.com" crossOrigin="anonymous" />
+
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5KCXDX57EM"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5KCXDX57EM');
+            `,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-cream-50 text-ink-900">
         <SiteHeader />
