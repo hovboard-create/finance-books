@@ -9,6 +9,12 @@
     "fetch-youtube": "tsx scripts/fetch-youtube.ts",
     "fetch-covers-ol": "tsx scripts/fetch-covers-ol.ts",
     "verify-covers": "tsx scripts/verify-covers.ts",
+    "discover-books": "tsx scripts/discover-books.ts",
+    "enrich-books": "tsx scripts/enrich-books.ts",
+    "generate-editorial": "tsx scripts/generate-editorial.ts",
+    "commit-and-deploy": "tsx scripts/commit-and-deploy.ts",
+    "bulk-import-amazon-top100": "tsx scripts/bulk-import-amazon-top100.ts",
+    "content-pipeline": "npm run discover-books && npm run enrich-books && npm run generate-editorial && npm run commit-and-deploy",
     "predev": "tsx scripts/etl.ts",
     "dev": "next dev",
     "prebuild": "tsx scripts/etl.ts",
@@ -17,9 +23,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
     "@types/better-sqlite3": "^7.6.13",
     "amazon-paapi": "^1.1.0",
+    "axios": "^1.7.4",
     "better-sqlite3": "^12.9.0",
+    "cheerio": "^1.0.0",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"

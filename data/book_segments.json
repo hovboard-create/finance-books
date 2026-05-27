@@ -53,5 +53,24 @@
   { "book_slug": "i-will-teach-you-to-be-rich", "segment_slug": "nyt-bestsellers", "display_rank": 5 },
   { "book_slug": "financial-feminist", "segment_slug": "nyt-bestsellers", "display_rank": 6 },
   { "book_slug": "your-money-or-your-life", "segment_slug": "nyt-bestsellers", "display_rank": 7 },
-  { "book_slug": "latte-factor", "segment_slug": "nyt-bestsellers", "display_rank": 8 }
+  { "book_slug": "latte-factor", "segment_slug": "nyt-bestsellers", "display_rank": 8 },
+
+  { "book_slug": "the-7-habits", "segment_slug": "best-business-books", "display_rank": 1 },
+  { "book_slug": "how-to-win-friends", "segment_slug": "best-business-books", "display_rank": 2 },
+  { "book_slug": "good-to-great", "segment_slug": "best-business-books", "display_rank": 3 },
+  { "book_slug": "getting-things-done", "segment_slug": "best-business-books", "display_rank": 4 },
+  { "book_slug": "think-and-grow-rich", "segment_slug": "best-business-books", "display_rank": 5 },
+  { "book_slug": "the-power-of-habit", "segment_slug": "best-business-books", "display_rank": 6 },
+  { "book_slug": "the-lean-startup", "segment_slug": "best-business-books", "display_rank": 7 },
+  { "book_slug": "influence-psychology", "segment_slug": "best-business-books", "display_rank": 8 },
+  { "book_slug": "zero-to-one", "segment_slug": "best-business-books", "display_rank": 9 },
+  { "book_slug": "thinking-fast-slow", "segment_slug": "best-business-books", "display_rank": 10 },
+  { "book_slug": "innovators-dilemma", "segment_slug": "best-business-books", "display_rank": 11 },
+  { "book_slug": "blue-ocean-strategy", "segment_slug": "best-business-books", "display_rank": 12 },
+  { "book_slug": "crucial-conversations", "segment_slug": "best-business-books", "display_rank": 13 },
+  { "book_slug": "outliers", "segment_slug": "best-business-books", "display_rank": 14 },
+  { "book_slug": "mindset", "segment_slug": "best-business-books", "display_rank": 15 },
+  { "book_slug": "grit", "segment_slug": "best-business-books", "display_rank": 16 },
+  { "book_slug": "drive", "segment_slug": "best-business-books", "display_rank": 17 },
+  { "book_slug": "the-one-thing", "segment_slug": "best-business-books", "display_rank": 18 }
 ]

@@ -24,6 +24,18 @@
     "sort_order": 2
   },
   {
+    "slug": "best-business-books",
+    "kind": "collection",
+    "name": "Best Business Books",
+    "short_name": "Business Books",
+    "audience": "Essential business wisdom for entrepreneurs, leaders, and anyone building something",
+    "hero_headline": "The Best Business Books",
+    "hero_subhead": "18 essential business books on strategy, growth, habits, and leadership — from Covey and Carnegie to Thiel and Collins. Timeless wisdom for building, scaling, and thinking differently.",
+    "meta_title": "Best Business Books for Entrepreneurs & Leaders (2026)",
+    "meta_description": "The best business books for entrepreneurs and leaders — The 7 Habits, Good to Great, Zero to One, The Lean Startup, and more. Key lessons on strategy, growth, and innovation.",
+    "sort_order": 3
+  },
+  {
     "slug": "for-new-grads",
     "kind": "audience",
     "name": "For 20-Somethings & New Grads",
@@ -33,7 +45,7 @@
     "hero_subhead": "Nine modern classics that turn your first paycheck into lasting wealth — no jargon, no shame, no get-rich-quick.",
     "meta_title": "Best Finance Books for Young Adults & New Grads (2026)",
     "meta_description": "The 9 best finance books for 20-somethings and new grads — modern, jargon-free, and built for your first salary. Editorial picks with key takeaways.",
-    "sort_order": 3
+    "sort_order": 4
   },
   {
     "slug": "for-paying-off-debt",
@@ -45,7 +57,7 @@
     "hero_subhead": "Seven step-by-step playbooks for paying off credit cards, student loans, and consumer debt — from the snowball method to behavior change that sticks.",
     "meta_title": "Best Books for Getting Out of Debt (2026 Edition)",
     "meta_description": "The 7 best books for paying off debt — from Dave Ramsey's snowball method to Vicki Robin's life-energy framework. Honest reviews with key lessons.",
-    "sort_order": 4
+    "sort_order": 5
   },
   {
     "slug": "for-beginner-investors",
@@ -57,7 +69,7 @@
     "hero_subhead": "Nine books that teach you to invest like Vanguard founder Jack Bogle — low-cost, low-stress, and built to compound for 40 years.",
     "meta_title": "Best Investing Books for Beginners (2026 Reading List)",
     "meta_description": "The 9 best investing books for beginners. Start with Bogle and Collins, finish with Graham. Honest takeaways on Rich Dad Poor Dad and the rest.",
-    "sort_order": 5
+    "sort_order": 6
   },
   {
     "slug": "for-entrepreneurs",
@@ -69,6 +81,6 @@
     "hero_subhead": "Seven books on cashflow, pricing, and profitability — the financial side of running a business that nobody teaches you in entrepreneurship school.",
     "meta_title": "Best Finance Books for Entrepreneurs & Small Business Owners",
     "meta_description": "The 7 best finance books for entrepreneurs — Profit First, E-Myth, $100M Offers, and more. Cashflow, pricing, and small-business profitability essentials.",
-    "sort_order": 6
+    "sort_order": 7
   }
 ]

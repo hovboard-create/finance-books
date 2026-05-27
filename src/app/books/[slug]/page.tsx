@@ -23,8 +23,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const book = getBookWithSegments(slug);
   if (!book) return {};
+
+  const rating = book.amazon_rating ?? book.goodreads_rating;
+  const ratingStr = rating ? ` (${rating.toFixed(1)}★)` : "";
+
   return {
-    title: `${book.title} by ${book.author} — Review & Key Lessons`,
+    title: `${book.title}${ratingStr} - ${book.author} Review & Key Lessons`,
     description:
       book.takeaway?.slice(0, 155) ??
       `Read our editorial review of ${book.title} by ${book.author}. Key takeaways, who it's for, and where to buy.`,
