@@ -13,7 +13,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://finance-books.com"),
+  metadataBase: new URL("https://www.finance-books.com"),
   title: {
     default: "Finance-Books.com — The Best Finance Books, Curated by Life Stage",
     template: "%s | Finance-Books.com",

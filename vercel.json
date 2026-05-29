@@ -1,8 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/books/:slug",
-      "destination": "/books/:slug"
+      "source": "/(.*)",
+      "destination": "https://www.finance-books.com/$1",
+      "permanent": true
     }
   ],
   "env": {
